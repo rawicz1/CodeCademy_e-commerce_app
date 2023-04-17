@@ -1,0 +1,23 @@
+.image-tile {
+    box-shadow: rgba(0,0,0, 0.5) 6px 6px 24px, rgba(0,0,0, 0.08) 0 0 0 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 0.5%;
+   
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .image-tile p {
+    padding-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .image-tile img {
+    opacity: 1;
+    transition: 0.3s all;
+  }
+  
+  .image-tile img:hover {    
+    transform: scale(1.08);    
+  }

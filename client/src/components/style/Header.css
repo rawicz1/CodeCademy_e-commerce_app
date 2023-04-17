@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+  }
+
+   .header-title {
+   
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .div-select {
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+
+  .header-select {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: large;  
+  }
+
+  .main-buttons p{
+    text-align: center;   
+  }
+ 
+  .select-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5vw;
+  }
+
+  button {
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+    border:none;
+  }
+
+  .cart-signout {
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .login-signout-buttons {
+    display: flex;
+    justify-content: end;    
+     }
+  
+  .google-login-button {    
+    display: flex;
+    justify-content: end;
+  }
+  .basket-button {
+    background-color: rgb(191, 254, 233);
+  }
+  .account-button {
+    background-color: rgb(115, 235, 235);
+  }
