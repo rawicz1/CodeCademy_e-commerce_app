@@ -42,11 +42,6 @@ const App = () => {
       window.location.replace(process.env.REACT_APP_BASE_URL)
     }
 
-    // if (query.get("canceled")) {
-    //   console.log(
-    //     "Order canceled -- continue to shop around and checkout when you're ready."
-    //   );
-    // }
   }, []);
 
   const showModal = (value) => {    
@@ -160,7 +155,7 @@ const App = () => {
       
       function initializeAccounts() {
         google.accounts.id.initialize({
-          client_id: "686809954652-5tajp5bn1t54i811bi0g4fhh8mrntoca.apps.googleusercontent.com",
+          client_id: process.env.REACT_APP_CLIENT_ID,
           callback: handleCallbackResponse
         })
         google.accounts.id.renderButton(

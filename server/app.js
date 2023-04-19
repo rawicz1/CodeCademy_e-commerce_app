@@ -26,52 +26,6 @@ app.use('/cart', require('./routes/cart'))
 app.use('/order', require('./routes/order'))
 app.use('/orderItem', require('./routes/orderItem'))
 
-// app.get('/entries/:userEmail', async (req, res) => {
-//     const { userEmail } = req.params 
-//     try {         
-//         const entries = await pool.query('SELECT * FROM entries WHERE user_email = $1 ORDER BY date DESC', [userEmail])
-//         res.json(entries.rows)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
-
-// //create an entry 
-// app.post('/entries', async (req, res) => {
-//     const {user_email, title, date, content} = req.body
-//     const id = uuidv4()
-//     try {
-//         const newEntry = await pool.query(`INSERT INTO entries (id, user_email, title, date, content) VALUES ($1, $2, $3, $4, $5)`, [id, user_email, title, date, content])
-//         res.json(newEntry)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
-
-// app.put('/entries/:id', async (req, res) => {
-//     const {title, content} = req.body
-//     const { id } = req.params
-//     try {
-//         const updatedEntry = await pool.query(`UPDATE entries SET title = $1, content = $2 WHERE id = $3`, [title, content, id])
-//         res.json(updatedEntry)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
-
-// app.delete('/entries/:id', async (req, res) => {
-//     const { id } = req.params;
-//     try {
-//         const deletedEntry = await pool.query(`DELETE FROM entries WHERE id = $1`, [id])
-//         res.json(deletedEntry)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
-
-
-// validate and sanitize 
-
 const validate = validations => {
     return async (req, res, next) => {
       for (let validation of validations) {
