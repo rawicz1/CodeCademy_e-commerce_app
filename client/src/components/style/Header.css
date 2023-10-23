@@ -34,12 +34,16 @@
   }
 
   button {
-    padding: 10px;
+    padding: 9px;
     margin-left: 5px;
     border-radius: 20px;
     border:none;
   }
 
+  .signout{
+    padding: 4px 10px;
+    
+  }
   .cart-signout {
     width: 40vh;
     display: flex;

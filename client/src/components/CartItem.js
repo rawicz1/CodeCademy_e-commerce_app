@@ -39,7 +39,7 @@ const CartItem = ({data, cartData, setCartData, getCartData, cartTotal, setCartT
         if (response.status === 200) {        
           getCartData()
           setCartTotal(prev => prev - paintingData[0].price)
-         console.log('painting removed from cart')
+        //  console.log('painting removed from cart')
           }
       } catch (error) {
         console.log(error)
