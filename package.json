@@ -2,13 +2,11 @@
   "name": "ai-gallery-project",
   "version": "1.0.0",
   "description": "",
-  
   "scripts": {
     "start": "node ./server/app.js"
-   
   },
-  
   "dependencies": {
+    "express": "^4.18.2",
     "if-env": "^1.0.4"
   }
 }
