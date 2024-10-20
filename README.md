@@ -17,7 +17,7 @@ Click on the image below to watch the demo video:
 
 2. **Product Catalog:**
    - A dynamic product listing page that displays items with images and prices.
-   - Categories and filters allow users to easily navigate through various painting types.
+   - Categories allow users to easily navigate through various painting types.
 
 3. **Shopping Cart:**
    - Users can add and remove products in their shopping cart. 
